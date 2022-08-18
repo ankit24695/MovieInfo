@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        background-image: url('https://wallpapercave.com/wp/OXMRO1s.jpg');"
+    }
+    img{
+        width:50%;
+    }
+    #showsug{
+        width:100%;
+        height:106px;
+        border: 0px solid black;
+        overflow:hidden;
+    }
+    h1,label,p,h2,h4{
+        color: aliceblue;
+    }
+    button{
+        margin-left: 40%;
+        margin-top: 10px;
+        background-color: antiquewhite;
+    }
+</style>
+    <title>Movie Info</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5" >Movie Info App</h1>
+        <form id="movieForm">
+         <div class="form-group">
+             <label for="Movie" >Movie Name</label>
+             <input class="form-control" type="text" id="movie" placeholder="Movie..." oninput="debounce(main,1000)"> 
+         </div>
+         <div id="sug"></div>
+         <div class="form-group">
+             <button class="btn btn-success btn-block">
+                 Search Movie
+             </button>
+         </div>
+         
+        </form>
+        <div id="show"></div>
+    </div>
+   
+</body>
+</html>
+<script src="index.js">
+
+</script>
